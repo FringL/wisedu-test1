@@ -1,35 +1,27 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css" type="text/css">
-        <!-- <script type="text/javascript" src="index.js"></script> -->
-
-        
     </head>
     <body id="page-background">
-        <script>
-            window.onload = function dataJson(data) {
-                console.log(data);
-            }
-        </script>
-        <div id="page-head">
+        <div id="header">
             <br>
             <div id="page-title"></div>
             <div id="banner">
-                <img id="banner-image" src="image/圣诞快乐.jpg" alt="圣诞快乐">
+                <a href=""><img id="banner-image" src="image/圣诞快乐.jpg" alt="圣诞快乐"></a> 
                 <div id="docker">
-                    <a class="function" href="www.baidu.com">
+                    <a class="function" href="">
                         <img class="function-image" src="image/开门.jpg"><br>
                         <span class="function-description">开门</span>
                     </a>
-                    <a class="function" href="www.baidu.com">
+                    <a class="function" href="">
                         <img class="function-image" src="image/缴费.jpg"><br>
                         <span class="function-description">缴费</span>
                     </a>
-                    <a class="function" href="www.baidu.com">
+                    <a class="function" href="">
                         <img class="function-image" src="image/报修.jpg"><br>
                         <span class="function-description">报修</span>
                     </a>
-                    <a class="function" href="www.baidu.com">
+                    <a class="function" href="">
                         <img class="function-image" src="image/投诉.jpg"><br>
                         <span class="function-description">投诉</span>
                     </a>    
@@ -39,18 +31,27 @@
         <div id="content">
             <div id="content-title">热门资讯</div>
             <ul id="articles">
-                <li id="article1" class="article">
-                    <div class="split-line"></div> <br>
-                    <div class="article-content" >
-                        <span class="article-title"></span>
-
+                <li class="article">
+                    <div class="split-line"></div><br>
+                    <div class="article-content">
+                        <a class="article-title" href="">aaaaaaa</a><br>
+                        <span class="article-time">2小时前发布</span><br>
+                        <span class="article-read">10人已阅读</span><br>
+                        <img class="article-image" src="image/开门.jpg">
+                    </div>
+                </li>
+                <li class="article">
+                    <div class="split-line"></div><br>
+                    <div class="article-content">
+                        <a class="article-title" href="">bbbb</a><br>
+                        <span class="article-time">132小时前发布</span><br>
+                        <span class="article-read">1人已阅读</span><br>
+                        <img class="article-image" src="image/开门.jpg">
                     </div>
                 </li>
             </ul>
             <div id="end-line"></div>
         </div>
-        
-        <script type="jsonp" src="data.json?cb=dataJson"></script>
     </body>
     
     </html>
