@@ -108,7 +108,7 @@ a:active{
 
 .article{
     height: 300px;
-    width: 60%;
+    width: 590px;
 }
 
 .article-title{
@@ -140,7 +140,7 @@ a:active{
     width: 200px;
     position: relative;
     top: -80px;
-    left: 650px;
+    left: 110%;
 }
 
 #end-line{

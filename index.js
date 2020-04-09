@@ -8,15 +8,18 @@ $.ajax({
                 //文章标题
                 var articleTitle = article.title;
 
-                //计算发布时间
+                //获取时间
                 var writeTime = new Date(article.time);
                 var nowTime = new Date();
+
+                //时间差
                 var monthDifference = nowTime.getMonth() - writeTime.getUTCMonth();
-                var articleTime = null;
                 var dayDifference = nowTime.getDay() - writeTime.getDay();
                 var hourDifference = nowTime.getHours() - writeTime.getHours();
                 var minuteDifference = nowTime.getMinutes() - writeTime.getMinutes();
-
+                
+                //计算标题时间
+                var articleTime = null;
                 if (monthDifference < 1){
                     if (dayDifference < 1){
                         if (hourDifference < 1){
